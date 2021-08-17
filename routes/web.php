@@ -22,6 +22,7 @@ Route::prefix('resturant')->group(function(){
     Route::get('chefs',[ResturantController::class,'chefs'])->name('chefs');
     Route::get('gallery',[ResturantController::class,'gallery'])->name('gallery');
     Route::get('contact',[ResturantController::class,'contact'])->name('contact');
+    Route::post('contact',[ResturantController::class,'contactSubmit'])->name('contactSubmit');
     Route::get('bookTable',[ResturantController::class,'bookTable'])->name('bookTable');
     Route::post('bookTable',[ResturantController::class,'bookTableSubmit'])->name('bookTableSubmit');
 });
